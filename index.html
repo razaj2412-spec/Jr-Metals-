@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JR Metals &amp; Commodities | Gold, Silver &amp; Copper Online</title>
+<meta name="description" content="JR Metals &amp; Commodities is an online metals and commodities seller based in Karachi, Pakistan. Buy or request Gold, Silver and Copper products, custom requirements and daily rates online.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JR Metals &amp; Commodities | Gold, Silver &amp; Copper Online">
+<meta property="og:description" content="Buy or request Gold, Silver and Copper products, custom requirements and daily rates online. Based in Karachi, Pakistan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%23d4af37'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#141414"><text y='.9em' font-size='90'>🪙</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"JR Metals & Commodities","description":"Online metals and commodities seller: Gold, Silver and Copper products and custom requirements.","email":"razaj2412@gmail.com","telephone":"+923152092225","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home">JR Metals <span>&amp; Commodities</span></a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a><a href="#products">Products</a><a href="#custom">Custom Orders</a><a href="#rates">Daily Rates</a><a href="#how">How to Order</a><a href="#about">About Us</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    <a class="btn btn-gold" data-wa="general" href="#">WhatsApp Us</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <h1>Quality Metals. Custom Requirements. Trusted Service.</h1>
+  <p>Buy Gold, Silver and Copper online — or tell us what you need and we can arrange the required metal product or custom item according to your specifications.</p>
+  <div class="btns">
+    <a class="btn btn-gold" href="#products">Explore Products</a>
+    <a class="btn btn-copper" data-wa="custom" href="#">Request Custom Order</a>
+    <a class="btn btn-silver" data-wa="general" href="#">Chat on WhatsApp</a>
+  </div>
+  <div class="ingots" aria-hidden="true"><i class="ingot gold"></i><i class="ingot silver"></i><i class="ingot copper"></i></div>
+</section>
+
+<section id="rates" class="section">
+  <h2>Daily Market Rates</h2>
+  <div id="rates-grid" class="grid3"></div>
+  <p class="note" id="rates-updated" aria-live="polite"></p>
+  <p class="note">Listed rates are indicative/current website rates and should be confirmed with JR Metals &amp; Commodities before placing an order.</p>
+</section>
+
+<section id="products" class="section">
+  <h2>Products</h2>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div id="product-grid" class="grid3"></div>
+  <p class="note">Availability is confirmed by our team for every order. No stock quantities are shown.</p>
+</section>
+
+<noscript><p class="section note">Please enable JavaScript to view products and rates, or contact us on WhatsApp: 03152092225 or razaj2412@gmail.com.</p></noscript>
+<div id="metal-sections"></div>
+
+<section id="custom" class="section cta-band">
+  <h2>Looking for Something Specific?</h2>
+  <p>Tell us what you need. We can help arrange Gold, Silver and Copper products according to your required form, quantity, weight, design or specifications.</p>
+  <p>Whether you need a Gold jewellery item, Silver bar or biscuit, Copper product, a specific quantity, or a custom requirement, send us your details and our team will assist with availability, pricing and order arrangements.</p>
+  <div class="btns"><a class="btn btn-gold" data-wa="custom" href="#">Request a Custom Order</a><a class="btn btn-silver" href="#enquiry">Send Requirement</a></div>
+</section>
+
+<section id="enquiry" class="section">
+  <h2>Custom Order Form</h2>
+  <form id="enquiry-form" class="form" novalidate>
+    <label>Full Name<input name="name" required autocomplete="name"></label>
+    <label>WhatsApp / Phone Number<input name="phone" type="tel" required autocomplete="tel"></label>
+    <label>Email<input name="email" type="email" autocomplete="email"></label>
+    <label>Select Metal<select name="metal" required><option>Gold</option><option>Silver</option><option>Copper</option><option>Other</option></select></label>
+    <label>Product Type<input name="product" required></label>
+    <label>Required Quantity<input name="quantity"></label>
+    <label>Approximate Weight<input name="weight"></label>
+    <label>Design / Size / Specification<input name="spec"></label>
+    <label>Delivery Location<input name="location"></label>
+    <label class="full">Additional Requirements<textarea name="notes" rows="3"></textarea></label>
+    <label class="full">Upload Reference Image (optional)<input name="image" type="file" accept="image/*"></label>
+    <div class="full btns">
+      <button class="btn btn-gold" type="submit">Submit Requirement</button>
+      <button class="btn btn-silver" type="button" id="form-wa">Send Requirement on WhatsApp</button>
+    </div>
+    <p class="note full" id="form-status" role="status"></p>
+  </form>
+</section>
+
+<section id="how" class="section">
+  <h2>How Our Online Ordering Works</h2>
+  <ol class="steps">
+    <li><b>Tell Us What You Need</b>Choose Gold, Silver or Copper and tell us the product, quantity, weight, design or specifications.</li>
+    <li><b>We Check Availability</b>Our team checks the requested product/item and confirms available options.</li>
+    <li><b>Receive Pricing</b>We provide the applicable price and order details.</li>
+    <li><b>Confirm Your Order</b>Once the customer confirms the order details, we proceed with the agreed arrangement.</li>
+    <li><b>Delivery</b>The product is arranged and delivered according to the agreed order and delivery terms.</li>
+  </ol>
+</section>
+
+<section class="section">
+  <h2>Why Choose JR Metals &amp; Commodities?</h2>
+  <div class="grid3">
+    <div class="card"><h3>Transparent Rates</h3><p>View our listed Gold, Silver and Copper rates before contacting us.</p></div>
+    <div class="card"><h3>Custom Requirements</h3><p>Tell us your required product, form, quantity, weight, design or specification.</p></div>
+    <div class="card"><h3>Direct WhatsApp Support</h3><p>Discuss your requirement directly with our team.</p></div>
+    <div class="card"><h3>Online Ordering</h3><p>Submit your product requirement online and receive assistance with pricing and availability.</p></div>
+    <div class="card"><h3>Clear Communication</h3><p>We aim to keep product information, pricing and order details straightforward.</p></div>
+    <div class="card"><h3>Karachi Based</h3><p>Based in Karachi, Pakistan.</p></div>
+  </div>
+</section>
+
+<section id="about" class="section narrow">
+  <h2>About Us</h2>
+  <p>JR Metals &amp; Commodities is an online metals and commodities selling business based in Karachi, Pakistan. We provide Gold, Silver, Copper and other metal products through an easy online ordering and enquiry process.</p>
+  <p>Customers can view daily rates, explore available product categories and contact us for specific requirements. Whether you need a Gold jewellery item, Silver bar or biscuit, Copper product, a specific quantity or a custom requirement, you can send us your specifications and we will assist with arranging the requested product.</p>
+  <p>Our focus is transparent pricing, clear communication, customer convenience and professional online service.</p>
+</section>
+
+<section id="faq" class="section narrow">
+  <h2>FAQ</h2>
+  <div id="faq-list"></div>
+</section>
+
+<section id="contact" class="section narrow">
+  <h2>Contact</h2>
+  <address>
+    <b>JR Metals &amp; Commodities</b><br>
+    Location: <a id="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Karachi%2C+Pakistan">Karachi, Pakistan</a><br>
+    WhatsApp: <a data-wa="general" href="#">03152092225</a><br>
+    Email: <a href="mailto:razaj2412@gmail.com">razaj2412@gmail.com</a>
+  </address>
+  <div class="btns"><a class="btn btn-gold" data-wa="general" href="#">WhatsApp Us</a><a class="btn btn-silver" href="mailto:razaj2412@gmail.com">Email Us</a></div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> JR Metals &amp; Commodities, Karachi, Pakistan</p>
+  <p><a href="policies.html#privacy">Privacy Policy</a> · <a href="policies.html#terms">Terms &amp; Conditions</a> · <a href="policies.html#order">Order &amp; Enquiry</a> · <a href="policies.html#delivery">Delivery</a> · <a href="policies.html#refund">Refund/Cancellation</a></p>
+</footer>
+<a class="float-wa" data-wa="general" href="#" aria-label="Chat on WhatsApp">WhatsApp</a>
+<script src="script.js"></script>
+</body>
+</html>
